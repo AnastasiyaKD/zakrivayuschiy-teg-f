@@ -38,6 +38,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --font-family: 'Inter', sans-serif;
+    --accent-font-family: 'PressStart2P', sans-serif;
     --font-size-min: 14px;
     --font-size-max: 18px;
     --font-weight-min: 400;
@@ -69,6 +71,10 @@
 }
 
 :root.theme-dark {
+  --font-family: 'Inter', sans-serif;
+  --accent-font-family: 'PressStart2P', sans-serif;
+  --font-size-min: 14px;
+  --font-size-max: 18px;
   --font-weight-min: 400;
   --font-weight-max: 785;
   --bc: #000;
@@ -87,6 +93,7 @@
       transparent 4px
     ),
     linear-gradient(#007f0c, #004306);
+  --mobile-inline-size: 100vi;
   --border: 2px solid #00cc14;
   --color-text-shadow: #000;
   --color-button-text: #00cc14;
@@ -96,10 +103,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --font-family: 'Inter', sans-serif;
+    --accent-font-family: 'PressStart2P', sans-serif;
+    --font-size-min: 14px;
+    --font-size-max: 18px;
     --font-weight-min: 400;
     --font-weight-max: 785;
     --bc: #000;
-    --accent-color: #000;
+    --accent-color: #00cc14;
     --bi: repeating-linear-gradient(
         #000,
         #000 2px,
@@ -114,9 +125,11 @@
         transparent 4px
       ),
       linear-gradient(#007f0c, #004306);
+    --mobile-inline-size: 100vi;
     --border: 2px solid #00cc14;
     --color-text-shadow: #000;
     --color-button-text: #00cc14;
     --color-heart: #00cc14;
+    --color__dialog: #000;
   }
 }
