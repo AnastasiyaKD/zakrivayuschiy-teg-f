@@ -68,6 +68,7 @@
   background-color: transparent;
   position: relative;
   transition: 0.3s ease;
+  padding-inline: 0;
 }
 
 .theme-menu__button:disabled {
@@ -79,7 +80,7 @@
   content: '▶';
   position: absolute;
   color: var(--accent-color);
-  left: -15px;
+  left: -20px;
   top: 1px;
 }
 
@@ -259,6 +260,7 @@
   padding: 0;
   position: relative;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .card__icon-button:focus {
@@ -274,10 +276,9 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   background-color: var(--bc);
-  margin: 54px auto 102px;
-  padding: 17px 20px;
+  margin: 50px auto 102px;
+  padding: 16px 20px;
   position: relative;
 }
 
@@ -291,8 +292,8 @@
 
 .floppy {
   fill: var(--color-button-text);
-  inline-size: calc(3.063rem - clamp(1.313rem, 1.158rem + 0.657vw, 1.75rem));
-  block-size: calc(3.063rem - clamp(1.313rem, 1.158rem + 0.657vw, 1.75rem));
+  inline-size: 28px;
+  block-size: 28px;
   mix-blend-mode: difference;
 }
 
@@ -408,5 +409,10 @@ dialog .floppy__dialog {
 
   .footer__button {
     flex-direction: row;
+  }
+
+  .floppy {
+    inline-size: 21px;
+    block-size: 21px;
   }
 }

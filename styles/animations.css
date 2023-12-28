@@ -13,7 +13,7 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 .theme-menu__button:disabled::before {
-  animation: arrow infinite 0.3s alternate ease-in-out;
+  animation: arrow infinite 0.5s alternate ease-in-out;
 }
 @keyframes arrow {
   0% {
